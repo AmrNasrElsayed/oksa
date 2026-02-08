@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root{
+     scroll-behavior: auto;
+}
+body {
+  overflow: hidden;
+}
+aside {
+  position: fixed;
+  left: 0;
+  top: 300px;
+}
+aside .sidebar{
+    display: none;
+}
+aside .sideBar-box {
+  padding: 10px;
+  border: black solid;
+  border-radius: 8px ;
+  white-space: nowrap;
+  background-color: #fafafa;
+}
+
+aside i {
+  cursor: pointer;
+ 
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+aside .gearIcon{
+  border: black solid;
+  padding: 10px;
+  border-radius: 2px;
+ background-color: #fafafa;
+ border-left: 0;
+}
+
+aside .color-span {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+aside .color-span:nth-child(1) {
+  background-color: #de3500;
+}
+aside .color-span:nth-child(2) {
+  background-color: blueviolet;
+}
+aside .color-span:nth-child(3) {
+  background-color: black;
+}
+aside .color-span:nth-child(4) {
+  background-color: grey;
+}
+
+.loadScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #fafafa;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  top: 50%;
+  left: 0;
+  transform: translate(-5px, -50%);
+  background: linear-gradient(to right, #fff 50%, #de3500 50%) no-repeat;
+  background-size: 200% auto;
+  background-position: 100% 0;
+  animation: colorBallMoveX 1.5s linear infinite alternate;
+}
+.loader:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: #de3500;
+}
+@keyframes colorBallMoveX {
+  0% {
+    background-position: 0% 0;
+    transform: translate(-15px, -50%);
+  }
+  15%,
+  25% {
+    background-position: 0% 0;
+    transform: translate(0px, -50%);
+  }
+  75%,
+  85% {
+    background-position: 100% 0;
+    transform: translate(50px, -50%);
+  }
+  100% {
+    background-position: 100% 0;
+    transform: translate(65px, -50%);
+  }
+}
+
+.navbar {
+  width: 100%;
+  transition: background-color 3s;
+}
+li {
+  cursor: pointer;
+}
+
+.navbar-brand {
+  font-size: 60px;
+  font-weight: 600;
+}
+.first {
+  background-color: #fafafa;
+}
+.first h1 {
+  font-size: 150px;
+  font-weight: 600;
+}
+
+.first h4 {
+  font-size: 80px;
+  font-weight: 300;
+}
+
+.second {
+  background-color: #fafafa;
+}
+.second h3 {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.second h4 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.third {
+  background-color: #fafafa;
+}
+.third h3 {
+  font-size: 70px;
+}
+
+.forth {
+  background-color: #fafafa;
+}
+.forth h3 {
+  font-size: 50px;
+}
+
+.sec5 {
+  background-color: #b07e06;
+}
+.sec5 h3 {
+  font-size: 30px;
+}
+
+.sec6 {
+  background-color: #6f7871;
+}
+.sec6 h3 {
+  font-size: 30px;
+}
+.sec7 {
+  background-color: #fafafa;
+}
+
+.sec7 li {
+  margin-bottom: 7px;
+}
+
+.barnd{
+    transition: all .5s .1s ease-in;
+     color: #6f7871;
+}
+
+
+.brand:hover{
+    color: black;
+}
