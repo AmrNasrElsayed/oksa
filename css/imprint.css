@@ -1,0 +1,71 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Page background */
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+/* Container */
+.container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 25px;
+  color: #2c5364;
+}
+
+/* Card */
+.card {
+  background: #f4f6f8;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Bold labels */
+.card span {
+  font-weight: bold;
+  color: #2c5364;
+}
+
+/* Note text */
+.note {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Back button */
+.back-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #2c5364;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #203a43;
+}
